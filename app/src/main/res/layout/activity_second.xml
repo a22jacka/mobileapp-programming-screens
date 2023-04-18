@@ -7,22 +7,12 @@
     tools:context=".SecondActivity">
 
     <TextView
-        android:id="@+id/textView_thing"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="activbity 2"
-        app:layout_constraintBottom_toTopOf="@+id/guideline5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@id/textView_numberOf"
-        app:layout_constraintTop_toTopOf="@+id/guideline4" />
-
-    <TextView
         android:id="@+id/textView_numberOf"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="activbity 2"
         app:layout_constraintBottom_toTopOf="@+id/guideline5"
-        app:layout_constraintEnd_toStartOf="@id/textView_thing"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/guideline4" />
 

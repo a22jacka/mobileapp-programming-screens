@@ -12,7 +12,6 @@ public class SecondActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_second);
 
-        TextView thingText = findViewById(R.id.textView_thing);
         TextView numberText = findViewById(R.id.textView_numberOf);
 
         Bundle extras = getIntent().getExtras();
@@ -20,8 +19,7 @@ public class SecondActivity extends AppCompatActivity {
             String things = extras.getString("thing");
             int numberOf = extras.getInt("numberOf");
 
-            thingText.setText(things);
-            numberText.setText(String.valueOf(numberOf));
+            numberText.setText(String.valueOf(numberOf) + " " + things);
         }
     }
 }
