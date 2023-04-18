@@ -6,4 +6,27 @@
     android:layout_height="match_parent"
     tools:context=".SecondActivity">
 
+    <TextView
+        android:id="@+id/textView_thing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="activbity 2"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="374dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView_numberOf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="activbity 2"
+        tools:layout_editor_absoluteX="169dp"
+        tools:layout_editor_absoluteY="374dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
@@ -17,7 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadAct2(View view2) {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        Log.i("MainActivity", "loading 2");
+        intent.putExtra("thing", "people");
+        intent.putExtra("numberOf", 24);
         startActivity(intent);
     }
 }
