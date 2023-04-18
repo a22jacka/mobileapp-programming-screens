@@ -16,8 +16,8 @@ public class MainActivity extends AppCompatActivity {
 
     public void loadAct2(View view2) {
         Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-        intent.putExtra("thing", "people");
-        intent.putExtra("numberOf", 24);
+        intent.putExtra("thing", "monkeys");
+        intent.putExtra("numberOf", 3452);
         startActivity(intent);
     }
 }
