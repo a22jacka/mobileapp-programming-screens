@@ -3,16 +3,26 @@ Det första som gjordes var att skapa en till activity vilket görs enkelt via F
 Activity -> Empty Activity.
 
 När sidan var skapad så behövdes ett sätt att komma till den vilket gjordes via en knapp på 
-MainActivity sidan. Knappen kallar funktionen som visas i kod 1. En Intent används för att starta 
-aktiviteten och för att skicka med lite data till den. 
+MainActivity sidan. I Kod 1 så visas en eventListener som satts på knappen som akntiveras när 
+knappen klickas på och används för att öppna och skicka data till SecondActivity. 
+En Intent används för att starta aktiviteten och för att skicka med lite data till den.
+
+``things`` och ``numberOf`` variablerna referar till två input fält där användaren kan skriva
+in vad det är för något och hur många det är.
 
 ```
-public void loadAct2(View view2) {
-    Intent intent = new Intent(MainActivity.this, SecondActivity.class);
-    intent.putExtra("thing", "people");
-    intent.putExtra("numberOf", 2856);
-    startActivity(intent);
-}
+button.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        String thingsText = things.getText().toString();
+        int numberOfText = Integer.parseInt(numberOf.getText().toString());
+
+        Intent intent = new Intent(MainActivity.this, SecondActivity.class);
+        intent.putExtra("thing", thingsText);
+        intent.putExtra("numberOf", numberOfText);
+        startActivity(intent);
+    }
+});
 ```
 Kod 1: Funktionen knappen kallar
 
